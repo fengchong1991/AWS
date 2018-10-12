@@ -21,3 +21,20 @@ options
 
 * `--dryrun`
 This option will tell you what would happen, but won’t actually do it; it’s good for testing the sync before actually performing it.
+
+### Bucket Permission and Policy
+
+```
+{
+    "Version": "2018-10-12",
+    "Statement": [
+        {
+            "Sid": "PublicReadForGetBucketObjects",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::[bucket name]/*"
+        }
+    ]
+}
+```
