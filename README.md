@@ -26,7 +26,7 @@ This option will tell you what would happen, but won’t actually do it; it’s 
 
 ```
 {
-    "Version": "2018-10-12",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Sid": "PublicReadForGetBucketObjects",
